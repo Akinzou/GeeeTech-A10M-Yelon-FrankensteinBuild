@@ -1,0 +1,11 @@
+# raw simulation data and large viewers stay out of git
+*.frd
+*.foam
+processor*/
+postProcessing/
+VTK/
+*.npz
+*.npy
+*.html
+__pycache__/
+*.pyc

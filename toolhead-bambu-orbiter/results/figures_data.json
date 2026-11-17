@@ -1,0 +1,345 @@
+{
+ "cfd_bed": {
+  "base": {
+   "Q_L_s": 1.231,
+   "k_Pa_per_Ls2": 43.1,
+   "U_r0-3": 2.39,
+   "U_r3-8": 4.7,
+   "U_r8-15": 6.32
+  },
+  "v4e": {
+   "Q_L_s": 0.594,
+   "k_Pa_per_Ls2": 338.9,
+   "U_r0-3": 5.26,
+   "U_r3-8": 10.54,
+   "U_r8-15": 9.86
+  },
+  "n55n": {
+   "Q_L_s": 0.549,
+   "k_Pa_per_Ls2": 408.6,
+   "U_r0-3": 5.5,
+   "U_r3-8": 11.01,
+   "U_r8-15": 7.85
+  },
+  "a10F": {
+   "Q_L_s": 0.571,
+   "k_Pa_per_Ls2": 372.5,
+   "U_r0-3": 3.4,
+   "U_r3-8": 6.72,
+   "U_r8-15": 5.3
+  }
+ },
+ "cfd_free_1mm_below_tip": {
+  "base_free": {
+   "Q_L_s": 1.209,
+   "U_r0-1.5": 3.41,
+   "U_r0-3": 4.69,
+   "U_r3-8": 7.69,
+   "U_r8-15": 6.93,
+   "Uz_down_r0-3": 3.08,
+   "uniformity_min_over_mean_r1-8": 0.664
+  },
+  "v4e_free": {
+   "Q_L_s": 0.591,
+   "U_r0-1.5": 6.64,
+   "U_r0-3": 4.94,
+   "U_r3-8": 6.74,
+   "U_r8-15": 4.87,
+   "Uz_down_r0-3": -3.92,
+   "uniformity_min_over_mean_r1-8": 0.623
+  },
+  "n55n_free": {
+   "Q_L_s": 0.559,
+   "U_r0-1.5": 5.53,
+   "U_r0-3": 5.85,
+   "U_r3-8": 8.69,
+   "U_r8-15": 3.75,
+   "Uz_down_r0-3": -2.39,
+   "uniformity_min_over_mean_r1-8": 0.465
+  },
+  "a10F_free": {
+   "Q_L_s": 0.577,
+   "U_r0-1.5": 9.48,
+   "U_r0-3": 10.54,
+   "U_r3-8": 7.76,
+   "U_r8-15": 2.56,
+   "Uz_down_r0-3": 5.19,
+   "uniformity_min_over_mean_r1-8": 0.657
+  }
+ },
+ "fea_stiffening": {
+  "a_w4_i15": {
+   "label": "ASA, original cover (20 g lumped screws)",
+   "main_X_Hz": 72.97,
+   "fan_modes_Hz": [
+    139.0,
+    156.1,
+    191.0
+   ],
+   "first_fan_mode_in_ADXL_X_rel_main_peak": 0.294,
+   "moving_mass_g": 331.5
+  },
+  "s1_ASA": {
+   "label": "ASA, option 1",
+   "main_X_Hz": 75.31,
+   "fan_modes_Hz": [
+    152.8,
+    199.4,
+    207.8
+   ],
+   "first_fan_mode_in_ADXL_X_rel_main_peak": 0.115,
+   "moving_mass_g": 334.9
+  },
+  "s2_ASA": {
+   "label": "ASA, option 2",
+   "main_X_Hz": 73.27,
+   "fan_modes_Hz": [
+    148.9,
+    162.0,
+    196.0
+   ],
+   "first_fan_mode_in_ADXL_X_rel_main_peak": 0.428,
+   "moving_mass_g": 331.9
+  },
+  "s12_ASA": {
+   "label": "ASA, options 1+2",
+   "main_X_Hz": 75.34,
+   "fan_modes_Hz": [
+    160.6,
+    200.7,
+    209.3
+   ],
+   "first_fan_mode_in_ADXL_X_rel_main_peak": 0.107,
+   "moving_mass_g": 335.3
+  },
+  "b_ASACF": {
+   "label": "ASA-CF, original",
+   "main_X_Hz": 74.49,
+   "fan_modes_Hz": [
+    157.8,
+    178.7,
+    208.7
+   ],
+   "first_fan_mode_in_ADXL_X_rel_main_peak": 0.138,
+   "moving_mass_g": 334.9
+  },
+  "s12_ASACF": {
+   "label": "ASA-CF, options 1+2",
+   "main_X_Hz": 75.78,
+   "fan_modes_Hz": [
+    172.5,
+    215.2,
+    216.7
+   ],
+   "first_fan_mode_in_ADXL_X_rel_main_peak": 0.111,
+   "moving_mass_g": 338.7
+  },
+  "h_base_ASA": {
+   "label": "ASA, original cover",
+   "main_X_Hz": 71.2,
+   "fan_modes_Hz": [
+    134.6,
+    152.1,
+    187.7
+   ],
+   "first_fan_mode_in_ADXL_X_rel_main_peak": 0.33,
+   "moving_mass_g": 349.0
+  },
+  "h_s12_ASA": {
+   "label": "ASA, stiffened cover (options 1+2)",
+   "main_X_Hz": 73.48,
+   "fan_modes_Hz": [
+    157.3,
+    196.4,
+    208.4
+   ],
+   "first_fan_mode_in_ADXL_X_rel_main_peak": 0.107,
+   "moving_mass_g": 353.1
+  },
+  "f_s12_ASA": {
+   "label": "ASA, FINAL (+ thick ears, diagonals)",
+   "main_X_Hz": 73.1,
+   "fan_modes_Hz": [
+    156.2,
+    194.7,
+    208.1
+   ],
+   "first_fan_mode_in_ADXL_X_rel_main_peak": 0.106,
+   "moving_mass_g": 357.3
+  },
+  "h_s12_ASACF": {
+   "label": "ASA-CF, stiffened cover",
+   "main_X_Hz": 73.93,
+   "fan_modes_Hz": [
+    169.4,
+    213.8,
+    215.7
+   ],
+   "first_fan_mode_in_ADXL_X_rel_main_peak": 0.11,
+   "moving_mass_g": 356.6
+  },
+  "f_s12_ASACF": {
+   "label": "ASA-CF, FINAL",
+   "main_X_Hz": 73.54,
+   "fan_modes_Hz": [
+    168.3,
+    213.2,
+    215.5
+   ],
+   "first_fan_mode_in_ADXL_X_rel_main_peak": 0.11,
+   "moving_mass_g": 361.0
+  }
+ },
+ "fea_v2_settings": {
+  "Walls / infill (ASA)": {
+   "a_w2_i15": {
+    "label": "2 walls, 15 %",
+    "main_X_Hz": 72.47,
+    "fan_modes_Hz": [
+     123.1,
+     138.1,
+     162.1
+    ]
+   },
+   "a_w4_i15": {
+    "label": "4 walls, 15 %",
+    "main_X_Hz": 72.97,
+    "fan_modes_Hz": [
+     139.0,
+     156.1,
+     191.0
+    ]
+   },
+   "a_w6_i15": {
+    "label": "6 walls, 15 %",
+    "main_X_Hz": 71.41,
+    "fan_modes_Hz": [
+     142.3,
+     160.4,
+     197.5
+    ]
+   },
+   "a_w4_i40": {
+    "label": "4 walls, 40 %",
+    "main_X_Hz": 72.78,
+    "fan_modes_Hz": [
+     140.1,
+     157.8,
+     193.8
+    ]
+   },
+   "a_w4_i100": {
+    "label": "4 walls, 100 %",
+    "main_X_Hz": 72.27,
+    "fan_modes_Hz": [
+     143.0,
+     161.6,
+     199.3
+    ]
+   }
+  },
+  "Material (4 walls, 15 %)": {
+   "b_PETG": {
+    "label": "PETG",
+    "main_X_Hz": 70.81,
+    "fan_modes_Hz": [
+     130.2,
+     147.1,
+     182.8
+    ]
+   },
+   "b_ABS": {
+    "label": "ABS",
+    "main_X_Hz": 73.08,
+    "fan_modes_Hz": [
+     137.4,
+     154.4,
+     188.9
+    ]
+   },
+   "a_w4_i15": {
+    "label": "ASA",
+    "main_X_Hz": 72.97,
+    "fan_modes_Hz": [
+     139.0,
+     156.1,
+     191.0
+    ]
+   },
+   "b_PETGCF": {
+    "label": "PETG-CF",
+    "main_X_Hz": 72.63,
+    "fan_modes_Hz": [
+     147.3,
+     166.1,
+     200.9
+    ]
+   },
+   "b_ABSCF": {
+    "label": "ABS-CF",
+    "main_X_Hz": 74.09,
+    "fan_modes_Hz": [
+     154.9,
+     174.7,
+     206.3
+    ]
+   },
+   "b_ASACF": {
+    "label": "ASA-CF",
+    "main_X_Hz": 74.49,
+    "fan_modes_Hz": [
+     157.8,
+     178.7,
+     208.7
+    ]
+   }
+  },
+  "Joints / fan mass (ASA)": {
+   "a_w4_i15": {
+    "label": "screws only",
+    "main_X_Hz": 72.97,
+    "fan_modes_Hz": [
+     139.0,
+     156.1,
+     191.0
+    ]
+   },
+   "c_rod": {
+    "label": "fan pressed on arm rod",
+    "main_X_Hz": 73.26,
+    "fan_modes_Hz": [
+     146.2,
+     163.8,
+     206.8
+    ]
+   },
+   "c_cb": {
+    "label": "cover bonded to body",
+    "main_X_Hz": 75.21,
+    "fan_modes_Hz": [
+     157.7,
+     198.8,
+     204.9
+    ]
+   },
+   "c_bonded": {
+    "label": "all contacts bonded",
+    "main_X_Hz": 75.59,
+    "fan_modes_Hz": [
+     178.5,
+     214.2,
+     232.5
+    ]
+   },
+   "c_fan20": {
+    "label": "20 g fan instead of 30 g",
+    "main_X_Hz": 75.86,
+    "fan_modes_Hz": [
+     152.6,
+     170.4,
+     212.2
+    ]
+   }
+  }
+ }
+}

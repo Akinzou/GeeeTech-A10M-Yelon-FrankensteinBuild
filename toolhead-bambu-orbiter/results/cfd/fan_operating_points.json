@@ -1,0 +1,202 @@
+{
+ "cfd/base:R": {
+  "k_Pa_per_Ls2": 42.8,
+  "op": {
+   "weak no-name (1.6 L/s, 120 Pa)": {
+    "Q_L_s": 1.01,
+    "dp_Pa": 44.0,
+    "scale_vs_CFD": 0.68
+   },
+   "typical no-name (2.0 L/s, 170 Pa)": {
+    "Q_L_s": 1.23,
+    "dp_Pa": 65.2,
+    "scale_vs_CFD": 0.82
+   },
+   "good 5015 (2.4 L/s, 220 Pa)": {
+    "Q_L_s": 1.44,
+    "dp_Pa": 88.4,
+    "scale_vs_CFD": 0.96
+   }
+  }
+ },
+ "cfd/base:L": {
+  "k_Pa_per_Ls2": 43.3,
+  "op": {
+   "weak no-name (1.6 L/s, 120 Pa)": {
+    "Q_L_s": 1.01,
+    "dp_Pa": 44.2,
+    "scale_vs_CFD": 0.67
+   },
+   "typical no-name (2.0 L/s, 170 Pa)": {
+    "Q_L_s": 1.23,
+    "dp_Pa": 65.5,
+    "scale_vs_CFD": 0.82
+   },
+   "good 5015 (2.4 L/s, 220 Pa)": {
+    "Q_L_s": 1.43,
+    "dp_Pa": 88.8,
+    "scale_vs_CFD": 0.95
+   }
+  }
+ },
+ "cfd/v4e_scr:R": {
+  "k_Pa_per_Ls2": 336.6,
+  "op": {
+   "weak no-name (1.6 L/s, 120 Pa)": {
+    "Q_L_s": 0.5,
+    "dp_Pa": 82.8,
+    "scale_vs_CFD": 0.33
+   },
+   "typical no-name (2.0 L/s, 170 Pa)": {
+    "Q_L_s": 0.6,
+    "dp_Pa": 119.4,
+    "scale_vs_CFD": 0.4
+   },
+   "good 5015 (2.4 L/s, 220 Pa)": {
+    "Q_L_s": 0.68,
+    "dp_Pa": 157.3,
+    "scale_vs_CFD": 0.46
+   }
+  }
+ },
+ "cfd/v4e_scr:L": {
+  "k_Pa_per_Ls2": 341.0,
+  "op": {
+   "weak no-name (1.6 L/s, 120 Pa)": {
+    "Q_L_s": 0.49,
+    "dp_Pa": 83.0,
+    "scale_vs_CFD": 0.33
+   },
+   "typical no-name (2.0 L/s, 170 Pa)": {
+    "Q_L_s": 0.59,
+    "dp_Pa": 119.6,
+    "scale_vs_CFD": 0.39
+   },
+   "good 5015 (2.4 L/s, 220 Pa)": {
+    "Q_L_s": 0.68,
+    "dp_Pa": 157.7,
+    "scale_vs_CFD": 0.45
+   }
+  }
+ },
+ "cfd/n55n:R": {
+  "k_Pa_per_Ls2": 405.4,
+  "op": {
+   "weak no-name (1.6 L/s, 120 Pa)": {
+    "Q_L_s": 0.46,
+    "dp_Pa": 85.5,
+    "scale_vs_CFD": 0.31
+   },
+   "typical no-name (2.0 L/s, 170 Pa)": {
+    "Q_L_s": 0.55,
+    "dp_Pa": 123.1,
+    "scale_vs_CFD": 0.37
+   },
+   "good 5015 (2.4 L/s, 220 Pa)": {
+    "Q_L_s": 0.63,
+    "dp_Pa": 162.0,
+    "scale_vs_CFD": 0.42
+   }
+  }
+ },
+ "cfd/n55n:L": {
+  "k_Pa_per_Ls2": 411.8,
+  "op": {
+   "weak no-name (1.6 L/s, 120 Pa)": {
+    "Q_L_s": 0.46,
+    "dp_Pa": 85.8,
+    "scale_vs_CFD": 0.3
+   },
+   "typical no-name (2.0 L/s, 170 Pa)": {
+    "Q_L_s": 0.55,
+    "dp_Pa": 123.5,
+    "scale_vs_CFD": 0.37
+   },
+   "good 5015 (2.4 L/s, 220 Pa)": {
+    "Q_L_s": 0.63,
+    "dp_Pa": 162.4,
+    "scale_vs_CFD": 0.42
+   }
+  }
+ },
+ "cfd/a10:R": {
+  "k_Pa_per_Ls2": 372.8,
+  "op": {
+   "weak no-name (1.6 L/s, 120 Pa)": {
+    "Q_L_s": 0.48,
+    "dp_Pa": 84.3,
+    "scale_vs_CFD": 0.32
+   },
+   "typical no-name (2.0 L/s, 170 Pa)": {
+    "Q_L_s": 0.57,
+    "dp_Pa": 121.5,
+    "scale_vs_CFD": 0.38
+   },
+   "good 5015 (2.4 L/s, 220 Pa)": {
+    "Q_L_s": 0.66,
+    "dp_Pa": 160.0,
+    "scale_vs_CFD": 0.44
+   }
+  }
+ },
+ "cfd/a10:L": {
+  "k_Pa_per_Ls2": 370.8,
+  "op": {
+   "weak no-name (1.6 L/s, 120 Pa)": {
+    "Q_L_s": 0.48,
+    "dp_Pa": 84.3,
+    "scale_vs_CFD": 0.32
+   },
+   "typical no-name (2.0 L/s, 170 Pa)": {
+    "Q_L_s": 0.57,
+    "dp_Pa": 121.4,
+    "scale_vs_CFD": 0.38
+   },
+   "good 5015 (2.4 L/s, 220 Pa)": {
+    "Q_L_s": 0.66,
+    "dp_Pa": 159.8,
+    "scale_vs_CFD": 0.44
+   }
+  }
+ },
+ "cfd/a10F:R": {
+  "k_Pa_per_Ls2": 372.3,
+  "op": {
+   "weak no-name (1.6 L/s, 120 Pa)": {
+    "Q_L_s": 0.48,
+    "dp_Pa": 84.3,
+    "scale_vs_CFD": 0.32
+   },
+   "typical no-name (2.0 L/s, 170 Pa)": {
+    "Q_L_s": 0.57,
+    "dp_Pa": 121.5,
+    "scale_vs_CFD": 0.38
+   },
+   "good 5015 (2.4 L/s, 220 Pa)": {
+    "Q_L_s": 0.66,
+    "dp_Pa": 159.9,
+    "scale_vs_CFD": 0.44
+   }
+  }
+ },
+ "cfd/a10F:L": {
+  "k_Pa_per_Ls2": 372.7,
+  "op": {
+   "weak no-name (1.6 L/s, 120 Pa)": {
+    "Q_L_s": 0.48,
+    "dp_Pa": 84.3,
+    "scale_vs_CFD": 0.32
+   },
+   "typical no-name (2.0 L/s, 170 Pa)": {
+    "Q_L_s": 0.57,
+    "dp_Pa": 121.5,
+    "scale_vs_CFD": 0.38
+   },
+   "good 5015 (2.4 L/s, 220 Pa)": {
+    "Q_L_s": 0.66,
+    "dp_Pa": 160.0,
+    "scale_vs_CFD": 0.44
+   }
+  }
+ }
+}

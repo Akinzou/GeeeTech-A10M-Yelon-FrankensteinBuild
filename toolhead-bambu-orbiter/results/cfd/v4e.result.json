@@ -1,0 +1,63 @@
+{
+ "case": "v4e",
+ "Q_L_s_per_fan": 1.5,
+ "gap_mm": 0.5,
+ "inlet_p_static_Pa_R": 733.13,
+ "inlet_p_total_Pa_R": 758.16,
+ "inlet_p_static_Pa_L": 751.14,
+ "inlet_p_total_Pa_L": 767.0,
+ "iterations": "700",
+ "converged": false,
+ "layer_z_mm": 78.58,
+ "layer_r1.5-8": {
+  "mean": 21.001,
+  "p10": 8.025,
+  "max": 38.895
+ },
+ "layer_r8-15": {
+  "mean": 28.332,
+  "p10": 23.037,
+  "max": 38.332
+ },
+ "layer_sectors_r1.5-8_mean": {
+  "+X(right)": 18.49,
+  "+Y(back)": 22.602,
+  "-X(left)": 19.391,
+  "-Y(front)": 23.527
+ },
+ "layer_area_frac_gt_2ms_r8": 0.994,
+ "layer1_z_mm": 77.73,
+ "layer1_r0-3_mean": 13.276,
+ "layer1_r3-8_mean": 26.627,
+ "layer1_r8-15_mean": 24.896,
+ "layer1_sectors_r1.5-8_mean": {
+  "+X": 25.87,
+  "+Y(back)": 23.817,
+  "-X": 27.332,
+  "-Y(front)": 24.488
+ },
+ "bed_tau_Pa_r1.5-8_mean": 5.3568,
+ "bed_tau_sectors": {
+  "+X": 4.3095,
+  "+Y": 6.1968,
+  "-X": 4.5004,
+  "-Y": 6.4216
+ },
+ "bed_tau_Pa_r0-3": 3.2055,
+ "bed_tau_Pa_r3-8": 5.5431,
+ "bed_tau_Pa_r8-15": 7.2354,
+ "bed_tau_Pa_r15-25": 3.2084,
+ "hotend_tau_Pa_z>70_mean": 1.6708,
+ "hotend_tau_Pa_z>70_max": 31.7918,
+ "sock_sideX_tau_mean_Pa": 0.301,
+ "sock_all_tau_mean_Pa": 0.357,
+ "nozzle_tip_tau_mean_Pa_z>75.3": 3.153,
+ "sock_side_pmax_Pa": -0.4,
+ "sock_side_pmax_at": [
+  278.04,
+  -16.88,
+  53.1
+ ],
+ "sock_side_p99_Pa": -0.6,
+ "sock_side_p_mean_Pa": -4.8
+}
