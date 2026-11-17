@@ -16,6 +16,46 @@ files behind every number.
 > **Status:** designed and simulated, **not yet printed or measured.** All numbers are model predictions. Measurements are welcome
 > (see [How to check it on your printer](#how-to-check-it-on-your-printer)).
 
+## Contents
+
+- [What changed and what the models predict](#what-changed-and-what-the-models-predict)
+- [Interactive 3D airflow (final a10 ducts)](#interactive-3d-airflow-final-a10-ducts)
+- [Documentation](#documentation)
+- [Folder layout](#folder-layout)
+- [Printing (short version)](#printing-short-version)
+- [How to check it on your printer](#how-to-check-it-on-your-printer)
+- [Tools](#tools)
+- [Third-party parts](#third-party-parts)
+- [License](#license)
+- Detailed write-ups:
+  - [Part-cooling airflow (CFD)](docs/airflow-cfd.md)
+    - [Summary](docs/airflow-cfd.md#summary)
+    - [Model](docs/airflow-cfd.md#model)
+    - [Design history](docs/airflow-cfd.md#design-history)
+    - [Limitations](docs/airflow-cfd.md#limitations)
+    - [Files](docs/airflow-cfd.md#files)
+  - [Vibration (modal FEA) and input shaping](docs/vibration-fea.md)
+    - [Summary](docs/vibration-fea.md#summary)
+    - [Model](docs/vibration-fea.md#model)
+    - [Results: original design (ASA, 4 perimeters, 15 % infill, screws only, lumped hardware)](docs/vibration-fea.md#results-original-design-asa-4-perimeters-15--infill-screws-only-lumped-hardware)
+    - [What the model does not know](docs/vibration-fea.md#what-the-model-does-not-know)
+    - [How to check it on the printer](docs/vibration-fea.md#how-to-check-it-on-the-printer)
+    - [Earlier model (discarded)](docs/vibration-fea.md#earlier-model-discarded)
+    - [Files](docs/vibration-fea.md#files)
+  - [Cover stiffening study](docs/cover-stiffening.md)
+    - [Where the cover moves](docs/cover-stiffening.md#where-the-cover-moves)
+    - [Options](docs/cover-stiffening.md#options)
+    - [Results](docs/cover-stiffening.md#results)
+    - [Caveats](docs/cover-stiffening.md#caveats)
+  - [Design changes against the original toolhead](docs/design-changes.md)
+    - [2–3. Duct mounting ears and diagonals](docs/design-changes.md#23-duct-mounting-ears-and-diagonals)
+    - [4. Cover stiffening](docs/design-changes.md#4-cover-stiffening)
+    - [5. Heat-set insert holes](docs/design-changes.md#5-heat-set-insert-holes)
+  - [Parts, hardware and printing](docs/assembly.md)
+    - [Printed parts (`cad/step`, `cad/stl`)](docs/assembly.md#printed-parts-cadstep-cadstl)
+    - [Hardware](docs/assembly.md#hardware)
+    - [After assembly](docs/assembly.md#after-assembly)
+
 ## What changed and what the models predict
 
 | | Original | This version |
@@ -39,6 +79,20 @@ What the cooling numbers mean:
 |---|---|
 | ![](docs/img/cfd_free_section.png) | ![](docs/img/fea_frf_adxl_x.png) |
 
+## Interactive 3D airflow (final a10 ducts)
+
+Rotatable 3D models of the simulated airflow around the nozzle: stream lines coloured by speed, with the hotend, ducts, fans and
+cover. **Each fan's air can be shown or hidden separately** by clicking the legend. Speeds are at the typical 5015 operating point
+(0.57 L/s per fan).
+
+| | Open in the browser | Download |
+|---|---|---|
+| With the bed 0.5 mm below the nozzle (bed coloured by wall shear) | [view](https://akinzou.github.io/GeeeTech-A10M-Yelon-FrankensteinBuild/toolhead-bambu-orbiter/docs/interactive/cfd_a10_3d_with_bed.html) | [cfd_a10_3d_with_bed.html](docs/interactive/cfd_a10_3d_with_bed.html) |
+| Free air (no bed, as for thin walls and bridges) | [view](https://akinzou.github.io/GeeeTech-A10M-Yelon-FrankensteinBuild/toolhead-bambu-orbiter/docs/interactive/cfd_a10_3d_free_air.html) | [cfd_a10_3d_free_air.html](docs/interactive/cfd_a10_3d_free_air.html) |
+
+The files are about 35 MB each and take a few seconds to load. GitHub does not display HTML files itself, so use the "view"
+links, or download a file and open it locally.
+
 ## Documentation
 
 | | |
@@ -53,7 +107,7 @@ What the cooling numbers mean:
 
 ```
 cad/step, cad/stl   printed parts (assembly coordinates: +Z down, -Y = front)
-docs/               write-ups and figures
+docs/               write-ups and figures; docs/interactive = rotatable 3D airflow models
 results/            result files behind every number in docs (CFD metrics, FEA modes / FRFs / energy splits)
 ```
 
@@ -88,8 +142,8 @@ The default `FREQ_END` (135 Hz) cuts the second peak off. If you measure this to
 ## Third-party parts
 
 The hotend, extruder, motor, fans, BLTouch, accelerometer board and linear rail are bought parts. Their CAD models were used only
-as context, as obstacles in the CFD and as masses in the FEA. They are **not** included in this repository. Only the printed parts
-designed for this toolhead are.
+as context, as obstacles in the CFD and as masses in the FEA. Their CAD files are **not** included in this repository; only the printed parts designed for
+this toolhead are. The interactive airflow models show their surfaces as tessellated context, the same as in the CFD.
 
 ## License
 

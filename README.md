@@ -14,4 +14,4 @@ and, where the design was simulated, the simulation results.
 Everything in this repository is licensed under [Creative Commons Attribution-ShareAlike 4.0 International](LICENSE) (CC BY-SA 4.0).
 
 Bought parts shown in renders or used in the simulations (hotend, extruder, fans, probe, sensor boards, rails) belong to their
-makers. Their CAD models are not included.
+makers. Their CAD files are not included. The interactive airflow models show their surfaces for context only.

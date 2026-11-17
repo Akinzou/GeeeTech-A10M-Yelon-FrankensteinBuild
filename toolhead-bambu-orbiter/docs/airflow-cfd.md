@@ -29,6 +29,12 @@ fan delivers roughly half its former flow.
 
 ![Free-air section, original vs. candidates vs. final](img/cfd_free_section.png)
 
+**Interactive 3D:** rotatable models of the final a10 airflow, with each fan's jet shown separately:
+- [with the bed](https://akinzou.github.io/GeeeTech-A10M-Yelon-FrankensteinBuild/toolhead-bambu-orbiter/docs/interactive/cfd_a10_3d_with_bed.html);
+- [in free air](https://akinzou.github.io/GeeeTech-A10M-Yelon-FrankensteinBuild/toolhead-bambu-orbiter/docs/interactive/cfd_a10_3d_free_air.html).
+
+The files are in [`interactive/`](interactive/).
+
 ## Model
 
 | Item | Setting |

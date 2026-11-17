@@ -9,3 +9,6 @@ VTK/
 *.html
 __pycache__/
 *.pyc
+
+# interactive 3D viewers are published on purpose
+!toolhead-bambu-orbiter/docs/interactive/*.html
