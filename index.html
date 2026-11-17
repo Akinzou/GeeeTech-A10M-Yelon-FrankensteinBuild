@@ -1,0 +1,59 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GeeeTech A10M – Yelon Frankenstein Build</title>
+<style>
+body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#0d1117;color:#e6edf3;line-height:1.5}
+header{display:flex;flex-wrap:wrap;gap:12px;align-items:center;padding:10px 18px;background:#161b22}
+header h1{font-size:18px;margin:0 12px 0 0} button{font-size:14px;padding:6px 12px;border:1px solid #30363d;background:#21262d;color:#e6edf3;border-radius:6px;cursor:pointer}
+button.on{background:#1f6feb;border-color:#1f6feb} a{color:#58a6ff}
+#wrap{position:relative;height:82vh;background:#fff} iframe{width:100%;height:100%;border:0}
+#load{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#555;font-size:18px;pointer-events:none}
+main{max-width:1200px;margin:0 auto;padding:16px 18px} table{border-collapse:collapse} td,th{border:1px solid #30363d;padding:4px 10px}
+.g{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px} .g img{width:100%;border-radius:6px;background:#fff}
+</style></head><body>
+<header><h1>A10M toolhead: rotatable airflow of the final ducts</h1>
+<button id="b1" class="on" onclick="show(1)">With bed</button><button id="b2" onclick="show(2)">Free air (no bed)</button>
+<span>Drag to rotate, scroll to zoom, click the legend to show or hide each fan's jet.</span>
+<a href="https://github.com/Akinzou/GeeeTech-A10M-Yelon-FrankensteinBuild">GitHub repo, STEP/STL</a></header>
+<div id="wrap"><div id="load">Loading the 3D model (about 35 MB)…</div>
+<iframe id="v" src="toolhead-bambu-orbiter/docs/interactive/cfd_a10_3d_with_bed.html" onload="document.getElementById('load').style.display='none'"></iframe></div>
+<main>
+<p>Direct-drive toolhead for the Geeetech A10M: a Bambu P1S/X1-style hotend, an Orbiter v2.0, 2× 5015, a BLTouch and an ADXL345 on an MGN12H rail.
+The part-cooling ducts were designed with CFD and the whole head was checked with vibration FEA. It has not been printed or measured yet.</p>
+<table><tr><th></th><th>Stock</th><th>This version</th></tr>
+<tr><td>Air 1 mm below the nozzle, nothing under it</td><td>4.7 m/s</td><td><b>10.5 m/s</b></td></tr>
+<tr><td>Air 1 mm above the bed, within 8 mm of the nozzle</td><td>2.4–4.7 m/s</td><td><b>3.4–6.7 m/s</b></td></tr>
+<tr><td>First fan vibration mode (ASA)</td><td>135 Hz</td><td><b>156 Hz</b> (ASA-CF 168 Hz)</td></tr>
+<tr><td>Duct mounting</td><td>press fit + glue</td><td><b>screwed with the fan</b></td></tr></table>
+<p><a href="https://github.com/Akinzou/GeeeTech-A10M-Yelon-FrankensteinBuild/tree/main/toolhead-bambu-orbiter">Files, details and hardware list on GitHub</a>. Licence CC BY-SA 4.0.</p>
+<h2>Pictures</h2><div class="g">
+<a href="toolhead-bambu-orbiter/docs/img/render_assembly_front_right.png"><img src="toolhead-bambu-orbiter/docs/img/render_assembly_front_right.png" loading="lazy" alt="render_assembly_front_right"></a>
+<a href="toolhead-bambu-orbiter/docs/img/render_assembly_front_left.png"><img src="toolhead-bambu-orbiter/docs/img/render_assembly_front_left.png" loading="lazy" alt="render_assembly_front_left"></a>
+<a href="toolhead-bambu-orbiter/docs/img/render_assembly_front.png"><img src="toolhead-bambu-orbiter/docs/img/render_assembly_front.png" loading="lazy" alt="render_assembly_front"></a>
+<a href="toolhead-bambu-orbiter/docs/img/render_assembly_back.png"><img src="toolhead-bambu-orbiter/docs/img/render_assembly_back.png" loading="lazy" alt="render_assembly_back"></a>
+<a href="toolhead-bambu-orbiter/docs/img/render_assembly_bottom.png"><img src="toolhead-bambu-orbiter/docs/img/render_assembly_bottom.png" loading="lazy" alt="render_assembly_bottom"></a>
+<a href="toolhead-bambu-orbiter/docs/img/render_printed_hardware.png"><img src="toolhead-bambu-orbiter/docs/img/render_printed_hardware.png" loading="lazy" alt="render_printed_hardware"></a>
+<a href="toolhead-bambu-orbiter/docs/img/render_printed_front_right.png"><img src="toolhead-bambu-orbiter/docs/img/render_printed_front_right.png" loading="lazy" alt="render_printed_front_right"></a>
+<a href="toolhead-bambu-orbiter/docs/img/render_printed_bottom.png"><img src="toolhead-bambu-orbiter/docs/img/render_printed_bottom.png" loading="lazy" alt="render_printed_bottom"></a>
+<a href="toolhead-bambu-orbiter/docs/img/render_duct_right.png"><img src="toolhead-bambu-orbiter/docs/img/render_duct_right.png" loading="lazy" alt="render_duct_right"></a>
+<a href="toolhead-bambu-orbiter/docs/img/render_duct_left.png"><img src="toolhead-bambu-orbiter/docs/img/render_duct_left.png" loading="lazy" alt="render_duct_left"></a>
+<a href="toolhead-bambu-orbiter/docs/img/duct_brace_right.png"><img src="toolhead-bambu-orbiter/docs/img/duct_brace_right.png" loading="lazy" alt="duct_brace_right"></a>
+<a href="toolhead-bambu-orbiter/docs/img/duct_brace_left.png"><img src="toolhead-bambu-orbiter/docs/img/duct_brace_left.png" loading="lazy" alt="duct_brace_left"></a>
+<a href="toolhead-bambu-orbiter/docs/img/stiff_cover_iso_before.png"><img src="toolhead-bambu-orbiter/docs/img/stiff_cover_iso_before.png" loading="lazy" alt="stiff_cover_iso_before"></a>
+<a href="toolhead-bambu-orbiter/docs/img/stiff_cover_iso_after.png"><img src="toolhead-bambu-orbiter/docs/img/stiff_cover_iso_after.png" loading="lazy" alt="stiff_cover_iso_after"></a>
+<a href="toolhead-bambu-orbiter/docs/img/stiff_right_before.png"><img src="toolhead-bambu-orbiter/docs/img/stiff_right_before.png" loading="lazy" alt="stiff_right_before"></a>
+<a href="toolhead-bambu-orbiter/docs/img/stiff_right_after.png"><img src="toolhead-bambu-orbiter/docs/img/stiff_right_after.png" loading="lazy" alt="stiff_right_after"></a>
+<a href="toolhead-bambu-orbiter/docs/img/stiff_bottom_after.png"><img src="toolhead-bambu-orbiter/docs/img/stiff_bottom_after.png" loading="lazy" alt="stiff_bottom_after"></a>
+<a href="toolhead-bambu-orbiter/docs/img/cfd_free_section.png"><img src="toolhead-bambu-orbiter/docs/img/cfd_free_section.png" loading="lazy" alt="cfd_free_section"></a>
+<a href="toolhead-bambu-orbiter/docs/img/cfd_free_1mm_below_tip.png"><img src="toolhead-bambu-orbiter/docs/img/cfd_free_1mm_below_tip.png" loading="lazy" alt="cfd_free_1mm_below_tip"></a>
+<a href="toolhead-bambu-orbiter/docs/img/cfd_bed_speed_1mm.png"><img src="toolhead-bambu-orbiter/docs/img/cfd_bed_speed_1mm.png" loading="lazy" alt="cfd_bed_speed_1mm"></a>
+<a href="toolhead-bambu-orbiter/docs/img/cfd_bed_section.png"><img src="toolhead-bambu-orbiter/docs/img/cfd_bed_section.png" loading="lazy" alt="cfd_bed_section"></a>
+<a href="toolhead-bambu-orbiter/docs/img/fea_frf_adxl_x.png"><img src="toolhead-bambu-orbiter/docs/img/fea_frf_adxl_x.png" loading="lazy" alt="fea_frf_adxl_x"></a>
+<a href="toolhead-bambu-orbiter/docs/img/fea_modes_f_s12_ASA.png"><img src="toolhead-bambu-orbiter/docs/img/fea_modes_f_s12_ASA.png" loading="lazy" alt="fea_modes_f_s12_ASA"></a>
+<a href="toolhead-bambu-orbiter/docs/img/fea_stiffening_first_fan_mode.png"><img src="toolhead-bambu-orbiter/docs/img/fea_stiffening_first_fan_mode.png" loading="lazy" alt="fea_stiffening_first_fan_mode"></a>
+<a href="toolhead-bambu-orbiter/docs/img/fea_print_settings.png"><img src="toolhead-bambu-orbiter/docs/img/fea_print_settings.png" loading="lazy" alt="fea_print_settings"></a>
+</div></main>
+<script>
+const S={1:"toolhead-bambu-orbiter/docs/interactive/cfd_a10_3d_with_bed.html",2:"toolhead-bambu-orbiter/docs/interactive/cfd_a10_3d_free_air.html"};
+function show(k){document.getElementById('load').style.display='flex';document.getElementById('v').src=S[k];
+document.getElementById('b1').className=k==1?'on':'';document.getElementById('b2').className=k==2?'on':'';}
+</script></body></html>
